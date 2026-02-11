@@ -26,8 +26,8 @@
         
         body {
             font-family: 'Noto Sans SC', sans-serif;
-            background-color: var(--off-white);
-            color: var(--dark-green);
+            background-color: var (--off-white);
+            color: var (--dark-green);
             overflow-x: hidden;
         }
         
@@ -37,61 +37,61 @@
             position: fixed;
             top: 0;
             left: 0;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
+            transform: translate (-50 %,-50 %);
+            border-radius: 50 %;
             z-index: 9999;
             pointer-events: none;
         }
         
         .cursor-dot {
-            width: 5px;
-            height: 5px;
-            background-color: var(--canopus);
+            width: 5 px;
+            height: 5 px;
+            background-color: var (--canopus);
         }
         
         .cursor-outline {
-            width: 30px;
-            height: 30px;
-            border: 1px solid var(--canopus);
-            transition: width 0.2s, height 0.2s, background-color 0.2s;
+            width: 30 px;
+            height: 30 px;
+            border: 1 px solid var (--canopus);
+            transition: width 0.2 s, height 0.2 s, background-color 0.2 s;
         }
         
         body:hover .cursor-outline.hovered {
-            width: 50px;
-            height: 50px;
-            background-color: rgba(59, 112, 115, 0.1);
+            width: 50 px;
+            height: 50 px;
+            background-color: rgba (59, 112, 115, 0.1);
         }
         
         /* 文字选择效果 */
         ::selection {
-            background: var(--canopus);
-            color: var(--pure-white);
+            background: var (--canopus);
+            color: var (--pure-white);
         }
         
         /* 滚动条 */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 8 px;
         }
         
         ::-webkit-scrollbar-track {
-            background: var(--off-white);
+            background: var (--off-white);
         }
         
         ::-webkit-scrollbar-thumb {
-            background: var(--canopus);
-            border-radius: 4px;
+            background: var (--canopus);
+            border-radius: 4 px;
         }
         
         /* 视频轮播容器 */
         .video-carousel {
             display: flex;
-            gap: 20px;
+            gap: 20 px;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
             scrollbar-width: none;
-            padding: 20px 0;
+            padding: 20 px 0;
         }
         
         .video-carousel::-webkit-scrollbar {
@@ -101,37 +101,37 @@
         .video-item {
             scroll-snap-align: center;
             flex-shrink: 0;
-            width: 300px;
-            height: 400px;
-            border-radius: 20px;
+            width: 300 px;
+            height: 400 px;
+            border-radius: 20 px;
             overflow: hidden;
             position: relative;
             cursor: pointer;
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            box-shadow: 0 10px 30px rgba(33, 108, 108, 0.2);
+            transition: all 0.5 s cubic-bezier (0.23, 1, 0.32, 1);
+            box-shadow: 0 10 px 30 px rgba (33, 108, 108, 0.2);
         }
         
         .video-item:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(33, 108, 108, 0.3);
+            transform: translateY (-10 px) scale (1.05);
+            box-shadow: 0 20 px 40 px rgba (33, 108, 108, 0.3);
             z-index: 10;
         }
         
         .video-item video {
-            width: 100%;
-            height: 100%;
+            width: 100 %;
+            height: 100 %;
             object-fit: cover;
         }
         
         .video-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, rgba(33, 108, 108, 0.9) 0%, transparent 50%);
+            background: linear-gradient (totop, rgba (33, 108, 108, 0.9) 0 %, transparent 50 %);
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding: 20px;
-            transition: opacity 0.3s;
+            padding: 20 px;
+            transition: opacity 0.3 s;
         }
         
         .video-item.playing .video-overlay {
@@ -139,83 +139,83 @@
         }
         
         .play-button {
-            width: 60px;
-            height: 60px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 50%;
+            width: 60 px;
+            height: 60 px;
+            background: rgba (255, 255, 255, 0.9);
+            border-radius: 50 %;
             display: flex;
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            transition: all 0.3s;
-            backdrop-filter: blur(10px);
+            top: 50 %;
+            left: 50 %;
+            transform: translate (-50 %, -50 %);
+            transition: all 0.3 s;
+            backdrop-filter: blur (10 px);
         }
         
         .video-item:hover .play-button {
-            transform: translate(-50%, -50%) scale(1.1);
-            background: var(--canopus);
+            transform: translate (-50 %, -50 %) scale (1.1);
+            background: var (--canopus);
             color: white;
         }
         
         /* AI科技图标动画 */
         .ai-icon-container {
             position: relative;
-            width: 200px;
-            height: 200px;
+            width: 200 px;
+            height: 200 px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         
         .ai-core {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--canopus), var(--deep-teal));
-            border-radius: 50%;
+            width: 80 px;
+            height: 80 px;
+            background: linear-gradient (135 deg, var (--canopus), var (--deep-teal));
+            border-radius: 50 %;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 60px rgba(59, 112, 115, 0.5);
-            animation: pulse-glow 3s ease-in-out infinite;
+            box-shadow: 0 0 60 px rgba (59, 112, 115, 0.5);
+            animation: pulse-glow 3 s ease-in-out infinite;
         }
         
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 60px rgba(59, 112, 115, 0.5); transform: scale(1); }
-            50% { box-shadow: 0 0 100px rgba(59, 112, 115, 0.8); transform: scale(1.05); }
+       @ keyframes pulse-glow {
+            0 %, 100 % { box-shadow: 0 0 60 px rgba (59, 112, 115, 0.5); transform: scale (1); }
+            50 % { box-shadow: 0 0 100px rgba(59, 112, 115, 0.8); transform: scale(1.05); }
         }
         
         .orbit-ring {
             position: absolute;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            animation: rotate 10s linear infinite;
+            border: 2 px solid rgba (255, 255, 255, 0.3);
+            border-radius: 50 %;
+            animation: rotate 10 s linear infinite;
         }
         
         .orbit-ring:nth-child(1) {
-            width: 120px;
-            height: 120px;
-            animation-duration: 8s;
+            width: 120 px;
+            height: 120 px;
+            animation-duration: 8 s;
         }
         
         .orbit-ring:nth-child(2) {
-            width: 160px;
-            height: 160px;
-            animation-duration: 12s;
+            width: 160 px;
+            height: 160 px;
+            animation-duration: 12 s;
             animation-direction: reverse;
         }
         
         .orbit-ring:nth-child(3) {
-            width: 200px;
-            height: 200px;
-            animation-duration: 16s;
+            width: 200 px;
+            height: 200 px;
+            animation-duration: 16 s;
         }
         
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
+        @ keyframes rotate {
+            from { transform: rotate (0 deg); }
             to { transform: rotate(360deg); }
         }
         
@@ -241,23 +241,23 @@
         /* 时间线 - 调整后的颜色 */
         .timeline-line {
             position: absolute;
-            left: 50%;
+            left: 50 %;
             top: 0;
             bottom: 0;
-            width: 2px;
-            background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.3) 20%, rgba(255,255,255,0.3) 80%, transparent 100%);
-            transform: translateX(-50%);
+            width: 2 px;
+            background: linear-gradient (180 deg, transparent 0 %, rgba (255,255,255,0.3) 20 %, rgba (255,255,255,0.3) 80 %, transparent 100 %);
+            transform: translateX (-50 %);
         }
         
         .timeline-dot {
             position: relative;
-            width: 20px;
-            height: 20px;
-            background: var(--canopus);
-            border: 3px solid white;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+            width: 20 px;
+            height: 20 px;
+            background: var (--canopus);
+            border: 3 px solid white;
+            border-radius: 50 %;
+            transition: all 0.3 s ease;
+            box-shadow: 0 0 0 4 px rgba (255, 255, 255, 0.2);
         }
         
         .timeline-item:hover .timeline-dot {
@@ -520,8 +520,8 @@
 
         <div class="video-carousel px-6" id="videoCarousel">
             <!-- 视频1 -->
-            <div class="video-item group" onclick="toggleVideo(this)">
-                <video loop muted playsinline poster="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=600&fit=crop">
+            <div class="video-item group" onclick="toggleVideothis">
+                <video loop muted playsinline poster="吴爱花封面·jpg">
                     <source src="吴爱花.mp4" type="video/mp4">
                 </video>
                 <div class="video-overlay">
@@ -537,7 +537,7 @@
 
             <!-- 视频2 -->
             <div class="video-item group" onclick="toggleVideo(this)">
-                <video loop muted playsinline poster="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=600&fit=crop">
+                <video loop muted playsinline poster="猫猫俯卧撑封面.jpg">
                     <source src="猫猫俯卧撑.mp4" type="video/mp4">
                 </video>
                 <div class="video-overlay">
@@ -553,7 +553,7 @@
 
             <!-- 视频3 -->
             <div class="video-item group" onclick="toggleVideo(this)">
-                <video loop muted playsinline poster="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=600&fit=crop">
+                <video loop muted playsinline poster="美国春晚封面.jpg">
                     <source src="美国春晚.mp4" type="video/mp4">
                 </video>
                 <div class="video-overlay">
@@ -569,7 +569,7 @@
 
             <!-- 视频4 -->
             <div class="video-item group" onclick="toggleVideo(this)">
-                <video loop muted playsinline poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=600&fit=crop">
+                <video loop muted playsinline poster="激烈打斗封面.jpg">
                     <source src="激烈打斗.mp4" type="video/mp4">
                 </video>
                 <div class="video-overlay">
@@ -799,6 +799,7 @@
                             <div class="w-48 h-48 bg-[#216C6C] rounded-lg flex items-center justify-center text-white relative overflow-hidden">
                                 <div class="text-center z-10">
                                     <div class="text-4xl mb-2">📱</div>
+                                  <img src="飞书问卷二维码.jpg"width="180"style="display:block;margin:0 auto10px;">
                                     <div class="text-xs font-mono">扫码报名</div>
                                 </div>
                                 <div class="absolute inset-0 opacity-20" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 10px, #fff 10px, #fff 12px), repeating-linear-gradient(90deg, transparent, transparent 10px, #fff 10px, #fff 12px);"></div>
@@ -986,4 +987,5 @@
     </script>
 </body>
 </html>
+
 
